@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Campaign Launch Checklist | akshaypatel_mediabuyer</title>
+<style>
+:root{--navy:#0B1F3A;--navy2:#13305a;--orange:#FF7A00;--bg:#F6F8FB;--card:#fff;--text:#14213a;--muted:#5b6b85;--line:#e1e7f0;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#081326;--card:#0f2240;--text:#eaf0fa;--muted:#9fb1cc;--line:#1f3a64;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#081326;--card:#0f2240;--text:#eaf0fa;--muted:#9fb1cc;--line:#1f3a64;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.55}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px}
+nav{background:var(--navy);color:#fff;position:sticky;top:env(safe-area-inset-top,0px);z-index:5}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:58px}
+.brand{font-weight:800;letter-spacing:.2px;font-size:15px}
+.brand b{color:var(--orange)}
+.pill{background:var(--orange);color:#fff;font-size:12px;font-weight:700;padding:6px 12px;border-radius:99px}
+header.hero{background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;padding:64px 0 72px;position:relative;overflow:hidden}
+header.hero:after{content:"";position:absolute;right:-80px;top:-80px;width:300px;height:300px;border-radius:50%;background:var(--orange);opacity:.15}
+.tag{display:inline-block;color:var(--orange);font-weight:700;font-size:13px;letter-spacing:1.5px;text-transform:uppercase}
+h1{font-size:clamp(28px,5vw,46px);line-height:1.15;margin:10px 0 14px}
+h1 span{color:var(--orange)}
+.hero p{max-width:600px;color:#cdd8ea;margin:0 0 26px}
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.flow div{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);padding:8px 14px;border-radius:10px;font-weight:600;font-size:14px}
+.flow i{color:var(--orange);font-style:normal;font-weight:800}
+.progress{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 20px;margin:-36px 0 28px;position:relative;box-shadow:0 8px 24px rgba(11,31,58,.12)}
+.progress .row{display:flex;justify-content:space-between;font-weight:700;font-size:14px;margin-bottom:8px}
+.bar{height:10px;background:var(--line);border-radius:99px;overflow:hidden}
+.bar div{height:100%;width:0;background:var(--orange);transition:width .3s}
+section{background:var(--card);border:1px solid var(--line);border-radius:16px;margin:0 0 18px;overflow:hidden}
+section h2{margin:0;padding:16px 20px;font-size:18px;display:flex;gap:12px;align-items:center;border-bottom:1px solid var(--line);border-left:5px solid var(--orange)}
+section h2 em{background:var(--navy);color:#fff;font-style:normal;font-size:12px;padding:3px 9px;border-radius:6px}
+ul{list-style:none;margin:0;padding:8px 12px 14px}
+li label{display:flex;gap:12px;align-items:flex-start;padding:9px 8px;border-radius:8px;cursor:pointer}
+li label:hover{background:rgba(255,122,0,.08)}
+input[type=checkbox]{accent-color:var(--orange);width:19px;height:19px;margin-top:3px;flex:none}
+input:checked+span{color:var(--muted);text-decoration:line-through}
+.note{background:var(--navy);color:#fff;border-radius:16px;padding:22px 24px;margin:26px 0}
+.note h3{margin:0 0 10px;color:var(--orange)}
+.note li{padding:4px 0}
+.cta{text-align:center;background:linear-gradient(135deg,var(--orange),#ff9a3d);color:#fff;border-radius:16px;padding:30px 20px;margin-bottom:30px}
+.cta h3{margin:0 0 6px;font-size:22px}
+.cta .h{display:inline-block;margin-top:12px;background:var(--navy);padding:10px 20px;border-radius:99px;font-weight:700}
+footer{background:var(--navy);color:#b9c7de;text-align:center;font-size:13px;padding:22px 20px}
+footer b{color:var(--orange)}
+.corner{position:fixed;right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));background:var(--navy);color:#fff;font-size:12px;font-weight:700;padding:8px 14px;border-radius:99px;border:2px solid var(--orange);z-index:9;box-shadow:0 4px 14px rgba(0,0,0,.25)}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><div class="brand">@akshaypatel<b>_mediabuyer</b></div><div class="pill">Meta Ads Partner</div></div></nav>
+
+<header class="hero"><div class="wrap">
+<span class="tag">Client Onboarding</span>
+<h1>Campaign Launch <span>Checklist</span></h1>
+<p>Campaign shuru karne se pehle sab kuch clear rakhne ke liye. Har step tick karein aur progress track karein.</p>
+<div class="flow"><div>Awareness</div><i>→</i><div>Warm Audience</div><i>→</i><div>Retargeting</div><i>→</i><div>Optimization</div></div>
+</div></header>
+
+<main class="wrap">
+<div class="progress"><div class="row"><span>Overall Progress</span><span id="pct">0%</span></div><div class="bar"><div id="fill"></div></div></div>
+
+<section><h2><em>A</em> Customer se chahiye (Pre-Launch)</h2><ul>
+<li><label><input type="checkbox"><span>Business/brand ka naam aur short description</span></label></li>
+<li><label><input type="checkbox"><span>Offer ya product/service ki complete details (price, benefits, USP)</span></label></li>
+<li><label><input type="checkbox"><span>Target audience ki jaankari (location, age group, interest)</span></label></li>
+<li><label><input type="checkbox"><span>Campaign ka main goal (leads, sales ya brand awareness)</span></label></li>
+<li><label><input type="checkbox"><span>Monthly ad budget confirm</span></label></li>
+<li><label><input type="checkbox"><span>Facebook Page aur Instagram account ka access (Business Manager ya Partner access)</span></label></li>
+<li><label><input type="checkbox"><span>Ad Account access</span></label></li>
+<li><label><input type="checkbox"><span>Meta Pixel / Conversions API setup ke liye website access (agar website hai)</span></label></li>
+<li><label><input type="checkbox"><span>Logo, brand colors aur creatives (photos/videos)</span></label></li>
+<li><label><input type="checkbox"><span>Past ads ka data ya results (agar available ho)</span></label></li>
+</ul></section>
+
+<section><h2><em>Step 1</em> Awareness</h2><ul>
+<li><label><input type="checkbox"><span>Campaign objective select (Awareness ya Video Views)</span></label></li>
+<li><label><input type="checkbox"><span>Target audience define</span></label></li>
+<li><label><input type="checkbox"><span>Video creatives ready (hook pehle 3 second mein)</span></label></li>
+<li><label><input type="checkbox"><span>Ad copy aur headline approve</span></label></li>
+<li><label><input type="checkbox"><span>Budget aur duration fix</span></label></li>
+<li><label><input type="checkbox"><span>Ads review ke liye submit</span></label></li>
+</ul></section>
+
+<section><h2><em>Step 2</em> Warm Audience (Custom Audiences)</h2><ul>
+<li><label><input type="checkbox"><span>Video viewers ki Custom Audience (25%, 50%, 75% watched)</span></label></li>
+<li><label><input type="checkbox"><span>Instagram profile engagers ki audience</span></label></li>
+<li><label><input type="checkbox"><span>Post/ad engagement wali audience</span></label></li>
+<li><label><input type="checkbox"><span>Audience size aur eligibility check (Meta ke minimum requirements ke hisaab se)</span></label></li>
+<li><label><input type="checkbox"><span>Audience retention period set</span></label></li>
+</ul></section>
+
+<section><h2><em>Step 3</em> Retargeting</h2><ul>
+<li><label><input type="checkbox"><span>Warm audience ko interest level ke hisaab se segments mein baantna</span></label></li>
+<li><label><input type="checkbox"><span>Proof content ready (reviews, testimonials, case studies, before/after)</span></label></li>
+<li><label><input type="checkbox"><span>Offer creative ready</span></label></li>
+<li><label><input type="checkbox"><span>Lead form ya sales landing page ready aur test kiya hua</span></label></li>
+<li><label><input type="checkbox"><span>Retargeting ads live</span></label></li>
+<li><label><input type="checkbox"><span>Converted users ko exclude karna</span></label></li>
+</ul></section>
+
+<section><h2><em>Step 4</em> Optimization</h2><ul>
+<li><label><input type="checkbox"><span>Tracking verify (Pixel, events, lead form)</span></label></li>
+<li><label><input type="checkbox"><span>Weekly report: Leads, Cost per Qualified Lead, Conversion Rate, Sales</span></label></li>
+<li><label><input type="checkbox"><span>Low performing ads pause karna</span></label></li>
+<li><label><input type="checkbox"><span>Winning creatives aur audiences par budget badhana</span></label></li>
+<li><label><input type="checkbox"><span>New creatives aur offers ka A/B testing</span></label></li>
+<li><label><input type="checkbox"><span>Lead quality feedback customer se lena</span></label></li>
+</ul></section>
+
+<section><h2><em>B</em> Customer ki Responsibilities (Campaign ke dauran)</h2><ul>
+<li><label><input type="checkbox"><span>Leads par jaldi response dena (ideally 5-10 minute ke andar)</span></label></li>
+<li><label><input type="checkbox"><span>Lead quality ka feedback share karna</span></label></li>
+<li><label><input type="checkbox"><span>Sales data ya conversions ki jaankari dena</span></label></li>
+<li><label><input type="checkbox"><span>Offer ya pricing mein koi badlav ho to turant batana</span></label></li>
+<li><label><input type="checkbox"><span>Weekly/monthly review call ke liye available rehna</span></label></li>
+</ul></section>
+
+<div class="note"><h3>Important Notes</h3><ul>
+<li>Results audience, offer, creative aur budget par depend karte hain, isliye kisi fixed result ki guarantee nahi di ja sakti.</li>
+<li>Pehle 1-2 hafte testing aur learning phase mein jaate hain, uske baad optimization se results behtar hote hain.</li>
+<li>Meta ki ad policies aur Custom Audience eligibility ka dhyan rakha jayega.</li>
+</ul></div>
+
+<div class="cta"><h3>Ready to launch your campaign?</h3><div>Checklist complete karein aur humein bata dein, hum campaign setup shuru kar denge.</div><div class="h">@akshaypatel_mediabuyer</div></div>
+</main>
+
+<footer>© Prepared by <b>akshaypatel_mediabuyer</b> · Performance Marketing &amp; Meta Ads</footer>
+<div class="corner">akshaypatel_mediabuyer</div>
+
+<script>
+var boxes=[].slice.call(document.querySelectorAll('input[type=checkbox]')),K='chk';
+function upd(){var n=boxes.filter(function(b){return b.checked}).length,p=Math.round(n*100/boxes.length);
+document.getElementById('pct').textContent=p+'% ('+n+'/'+boxes.length+')';document.getElementById('fill').style.width=p+'%';
+try{localStorage.setItem(K,JSON.stringify(boxes.map(function(b){return b.checked})))}catch(e){}}
+try{var s=JSON.parse(localStorage.getItem(K)||'[]');boxes.forEach(function(b,i){b.checked=!!s[i]})}catch(e){}
+boxes.forEach(function(b){b.addEventListener('change',upd)});upd();
+</script>
+</body>
+</html>
